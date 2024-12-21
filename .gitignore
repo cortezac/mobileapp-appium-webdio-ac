@@ -1,0 +1,6 @@
+node_modules
+app
+allure-results
+allure-report
+_results_
+environments

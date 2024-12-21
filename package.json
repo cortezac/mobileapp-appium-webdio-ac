@@ -1,0 +1,35 @@
+{
+  "name": "appium-webdriverio-ac",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "ard:smoke": "cross-env ENV=ard wdio wdio.conf.js --suite smoke",
+    "ird:smoke": "cross-env ENV=ird wdio wdio.conf.js --suite smoke",
+    "ard:regression": "cross-env ENV=ard wdio wdio.conf.js --suite regression",
+    "avd:smoke": "cross-env ENV=avd wdio wdio.conf.js --suite smoke",
+    "avd:regression": "cross-env ENV=avd wdio wdio.conf.js --suite regression"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@wdio/allure-reporter": "^9.0.8",
+    "@wdio/appium-service": "^9.0.9",
+    "@wdio/cli": "^9.0.9",
+    "@wdio/local-runner": "^9.0.9",
+    "@wdio/mocha-framework": "^9.0.8",
+    "@wdio/spec-reporter": "^9.0.8",
+    "appium": "^2.11.3",
+    "appium-uiautomator2-driver": "^3.7.9",
+    "appium-xcuitest-driver": "^7.32.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "eslint": "^9.10.0",
+    "eslint-plugin-wdio": "^9.0.8",
+    "wdio-video-reporter": "^6.0.0"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.30.0"
+  }
+}
